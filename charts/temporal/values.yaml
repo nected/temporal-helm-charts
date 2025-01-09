@@ -243,6 +243,12 @@ server:
     containerSecurityContext: {}
     topologySpreadConstraints: []
     podDisruptionBudget: {}
+    autoscaling:
+      enabled: false
+      minReplicas: "1"
+      maxReplicas: "2"
+      targetCPU: "75"
+      targetMemory: "75"
   internalFrontend:
     # Enable this to create internal-frontend
     enabled: false
@@ -297,6 +303,12 @@ server:
     containerSecurityContext: {}
     topologySpreadConstraints: []
     podDisruptionBudget: {}
+    autoscaling:
+      enabled: false
+      minReplicas: "1"
+      maxReplicas: "2"
+      targetCPU: "75"
+      targetMemory: "75"
   matching:
     service:
       # type: ClusterIP
@@ -321,6 +333,12 @@ server:
     containerSecurityContext: {}
     topologySpreadConstraints: []
     podDisruptionBudget: {}
+    autoscaling:
+      enabled: false
+      minReplicas: "1"
+      maxReplicas: "2"
+      targetCPU: "75"
+      targetMemory: "75"
   worker:
     service:
       # type: ClusterIP
@@ -345,6 +363,12 @@ server:
     containerSecurityContext: {}
     topologySpreadConstraints: []
     podDisruptionBudget: {}
+    autoscaling:
+      enabled: false
+      minReplicas: "1"
+      maxReplicas: "2"
+      targetCPU: "75"
+      targetMemory: "75"
 admintools:
   enabled: true
   image:
